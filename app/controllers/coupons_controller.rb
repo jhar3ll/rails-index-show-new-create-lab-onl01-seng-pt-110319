@@ -10,8 +10,8 @@ class CouponsController < ApplicationController
   
   def create
     @coupon = Coupon.new 
-    @coupon.code = params[:coupon_code]
-    @coupon.store = params[:coupon_store]
+    @coupon.coupon_code = params[:coupon_code]
+    @coupon.coupon_store = params[:coupon_store]
     @coupon.save
   end 
 end 
