@@ -10,7 +10,7 @@ end
 describe 'Multiple coupons are shown' do
   it 'on the index page' do
     Coupon.create(coupon_code: "ASD123", coupon_store: "Chipotle")
-    Coupon.create(coupon_code: "XYZ098", store: "Jamba")
+    Coupon.create(coupon_code: "XYZ098", coupon_store: "Jamba")
     visit coupons_path
     expect(page).to have_content(/Chipotle|Jamba/)
   end
