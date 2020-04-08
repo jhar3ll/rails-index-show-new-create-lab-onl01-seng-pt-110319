@@ -41,7 +41,7 @@ describe 'form page' do
 
     click_on "Submit Coupon"
 
-    expect(Coupon.last.store).to eq("Quip")
+    expect(Coupon.last.coupon_store).to eq("Quip")
   end
 end
 
